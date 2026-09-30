@@ -211,5 +211,29 @@
   },
   "permissionsGrant": {
     "message": "Zugriff erlauben"
+  },
+  "noticeMissingHeading": {
+    "message": "Nicht bei $TITLE$ verfügbar",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "noticeMissingBody": {
+    "message": "Dieser Artikel erscheint nicht bei $TITLE$. Sie bleiben deshalb auf dieser Seite.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "noticeClose": {
+    "message": "Schliessen"
+  },
+  "optionsNotifyMissing": {
+    "message": "Hinweis anzeigen, wenn ein Artikel bei meiner Zeitung nicht verfügbar ist"
   }
 }

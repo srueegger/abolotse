@@ -211,5 +211,29 @@
   },
   "permissionsGrant": {
     "message": "Allow access"
+  },
+  "noticeMissingHeading": {
+    "message": "Not available at $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "noticeMissingBody": {
+    "message": "This article is not published at $TITLE$, so you stay on this page.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "noticeClose": {
+    "message": "Close"
+  },
+  "optionsNotifyMissing": {
+    "message": "Show a notice when an article is not available at my newspaper"
   }
 }

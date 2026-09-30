@@ -1,6 +1,7 @@
 import { browser } from 'wxt/browser';
 import type { BackgroundRequest, ContentRequest, PageStatus } from '../messages';
-import { showOverlay, type OverlayHandle } from '../overlay/overlay';
+import { showMissingNotice } from '../overlay/notice';
+import { showOverlay } from '../overlay/overlay';
 import { matchPatterns } from '../publishers';
 
 export default defineContentScript({
@@ -9,7 +10,8 @@ export default defineContentScript({
 
   main(ctx) {
     let status: PageStatus = { kind: 'checking' };
-    let overlay: OverlayHandle | undefined;
+    // The overlay or notice currently shown, if any.
+    let ui: { close: () => void } | undefined;
     let run = 0;
 
     browser.runtime.onMessage.addListener((message: ContentRequest, _sender, sendResponse) => {
@@ -20,15 +22,24 @@ export default defineContentScript({
 
     async function check(href: string) {
       const current = ++run;
-      overlay?.close();
-      overlay = undefined;
+      ui?.close();
+      ui = undefined;
       status = { kind: 'checking' };
 
       const response = await send({ type: 'check', url: href });
       if (current !== run || !ctx.isValid) return;
       status = response ?? { kind: 'skip', reason: 'not-article' };
 
-      if (status.kind !== 'result' || status.result !== 'exists' || status.stayed) return;
+      if (status.kind !== 'result') return;
+
+      if (status.result === 'missing' && status.notice) {
+        const { targetName } = status;
+        await pageReady();
+        if (current === run && ctx.isValid) ui = showMissingNotice(targetName);
+        return;
+      }
+
+      if (status.result !== 'exists' || status.stayed) return;
       const { targetUrl, targetName, countdown } = status;
 
       if (countdown === 0) {
@@ -38,7 +49,7 @@ export default defineContentScript({
 
       await pageReady();
       if (current !== run || !ctx.isValid) return;
-      overlay = showOverlay({
+      ui = showOverlay({
         targetName,
         countdown,
         onRead: () => location.replace(targetUrl),
@@ -51,7 +62,7 @@ export default defineContentScript({
     }
 
     ctx.addEventListener(window, 'wxt:locationchange', ({ newUrl }) => void check(newUrl.href));
-    ctx.onInvalidated(() => overlay?.close());
+    ctx.onInvalidated(() => ui?.close());
     void check(location.href);
   },
 });

@@ -22,4 +22,10 @@ describe('normalizeSettings', () => {
     expect(result.ownTitles).toEqual({ 'tamedia-de': 'bazonline' });
     expect(result.excludedSources).toEqual(['tdg']);
   });
+
+  it('keeps the missing-article notice switch', () => {
+    expect(normalizeSettings({}).notifyMissing).toBe(true);
+    expect(normalizeSettings({ notifyMissing: false }).notifyMissing).toBe(false);
+    expect(normalizeSettings({ notifyMissing: 'no' }).notifyMissing).toBe(true);
+  });
 });

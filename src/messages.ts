@@ -23,4 +23,6 @@ export type PageStatus =
       targetUrl: string;
       stayed: boolean;
       countdown: number;
+      /** Show the "not available" notice (first time this session only). */
+      notice: boolean;
     };

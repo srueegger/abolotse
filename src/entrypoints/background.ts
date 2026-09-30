@@ -9,6 +9,7 @@ import { loadSettings } from '../settings';
 const CACHE_TTL_MS = 10 * 60 * 1000;
 const CACHE_PREFIX = 'check:';
 const STAY_PREFIX = 'stay:';
+const NOTICE_PREFIX = 'notice:';
 
 interface CacheEntry {
   result: ExistsResult;
@@ -73,6 +74,10 @@ async function handleCheck(href: string, tabId: number): Promise<PageStatus> {
   );
 
   await updateBadge(tabId, result, decision.stayed, target.title.name);
+  const notice =
+    result === 'missing' &&
+    settings.notifyMissing &&
+    (await firstTime(NOTICE_PREFIX + stayKey(decision.article)));
   return {
     kind: 'result',
     result,
@@ -80,6 +85,7 @@ async function handleCheck(href: string, tabId: number): Promise<PageStatus> {
     targetUrl,
     stayed: decision.stayed,
     countdown: settings.countdown,
+    notice,
   };
 }
 
@@ -92,6 +98,13 @@ async function handleStay(href: string, tabId: number): Promise<PageStatus> {
 async function isStayed(article: ArticleMatch): Promise<boolean> {
   const key = STAY_PREFIX + stayKey(article);
   return Boolean((await browser.storage.session.get(key))[key]);
+}
+
+/** True the first time a key is seen in this browser session. */
+async function firstTime(key: string): Promise<boolean> {
+  if ((await browser.storage.session.get(key))[key]) return false;
+  await browser.storage.session.set({ [key]: true });
+  return true;
 }
 
 async function cachedCheck(key: string, run: () => Promise<ExistsResult>): Promise<ExistsResult> {

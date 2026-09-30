@@ -37,7 +37,8 @@
 
 /* Typography lives here, not on :host: the host's inline `all: initial`
    wins over :host rules and would reset the font to the browser default. */
-.dialog {
+.dialog,
+.notice {
   font-family:
     system-ui,
     -apple-system,
@@ -48,6 +49,9 @@
   line-height: 1.5;
   text-align: left;
   color: var(--fg);
+}
+
+.dialog {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -130,6 +134,65 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+/* Non-modal "not available" notice */
+.notice {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: min(380px, calc(100vw - 32px));
+  padding: 14px 8px 14px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 22%);
+  font-size: 14px;
+  animation: slide-in 200ms ease-out;
+}
+
+.notice-icon svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.notice-text {
+  flex: 1;
+}
+
+.notice p {
+  margin: 0;
+}
+
+.notice-heading {
+  font-weight: 650;
+}
+
+.notice-close {
+  flex: none;
+  width: 32px;
+  min-height: 32px;
+  padding: 0;
+  border: 0;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--muted);
+}
+
+.notice-close:hover {
+  color: var(--fg);
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
 @keyframes shrink {
   from {
     transform: scaleX(1);
@@ -154,7 +217,8 @@ button:focus-visible {
 
 @media (prefers-reduced-motion: reduce) {
   .backdrop,
-  .dialog {
+  .dialog,
+  .notice {
     animation: none;
   }
 

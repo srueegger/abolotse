@@ -74,6 +74,10 @@ $<HTMLInputElement>('enabled').addEventListener('change', (event) => {
   void save({ enabled: (event.target as HTMLInputElement).checked });
 });
 
+$<HTMLInputElement>('notify-missing').addEventListener('change', (event) => {
+  void save({ notifyMissing: (event.target as HTMLInputElement).checked });
+});
+
 const countdown = $<HTMLInputElement>('countdown');
 countdown.addEventListener('input', () => renderCountdown(Number(countdown.value)));
 countdown.addEventListener('change', () => void save({ countdown: Number(countdown.value) }));
@@ -98,6 +102,7 @@ function render(settings: Settings) {
   }
 
   $<HTMLInputElement>('enabled').checked = settings.enabled;
+  $<HTMLInputElement>('notify-missing').checked = settings.notifyMissing;
   countdown.value = String(settings.countdown);
   renderCountdown(settings.countdown);
   $('welcome-done').hidden = !isWelcome || Object.keys(settings.ownTitles).length === 0;

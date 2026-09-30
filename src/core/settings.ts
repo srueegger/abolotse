@@ -13,6 +13,8 @@ export interface Settings {
   ownTitles: Record<string, string>;
   /** Source titles (by title ID) that never trigger a redirect. */
   excludedSources: string[];
+  /** Show a short notice when an article is not available at the own title. */
+  notifyMissing: boolean;
 }
 
 export const DEFAULT_SETTINGS: Readonly<Settings> = {
@@ -21,6 +23,7 @@ export const DEFAULT_SETTINGS: Readonly<Settings> = {
   countdown: 3,
   ownTitles: {},
   excludedSources: [],
+  notifyMissing: true,
 };
 
 /**
@@ -62,5 +65,9 @@ export function normalizeSettings(
     countdown,
     ownTitles,
     excludedSources,
+    notifyMissing:
+      typeof input.notifyMissing === 'boolean'
+        ? input.notifyMissing
+        : DEFAULT_SETTINGS.notifyMissing,
   };
 }

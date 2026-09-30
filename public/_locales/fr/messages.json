@@ -211,5 +211,29 @@
   },
   "permissionsGrant": {
     "message": "Autoriser l’accès"
+  },
+  "noticeMissingHeading": {
+    "message": "Pas disponible dans $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "noticeMissingBody": {
+    "message": "Cet article n’est pas publié dans $TITLE$. Vous restez donc sur cette page.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "noticeClose": {
+    "message": "Fermer"
+  },
+  "optionsNotifyMissing": {
+    "message": "Afficher un avis lorsqu’un article n’est pas disponible dans mon journal"
   }
 }

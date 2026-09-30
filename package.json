@@ -1,6 +1,8 @@
 {
   "name": "abolotse",
   "description": "Opens sister-title articles on the Swiss newspaper you subscribe to.",
+  "author": "Samuel Rüegger <samuel@rueegger.me>",
+  "homepage": "https://github.com/srueegger/abolotse",
   "private": true,
   "version": "1.0.0",
   "type": "module",

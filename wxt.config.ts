@@ -21,6 +21,10 @@ export default defineConfig({
     action: {
       default_title: '__MSG_extName__',
     },
+    // Firefox expects a plain name, Chrome an object with an email address.
+    ...(browser === 'firefox'
+      ? { author: 'Samuel Rüegger' }
+      : { author: { email: 'samuel@rueegger.me' } }),
     ...(browser === 'firefox' && {
       browser_specific_settings: {
         gecko: {

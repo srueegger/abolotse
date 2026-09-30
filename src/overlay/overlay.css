@@ -28,6 +28,26 @@
   box-sizing: border-box;
 }
 
+/* The shown element is a manual popover in the top layer; reset the UA
+   popover styles (centred box with border, padding and background). */
+[popover] {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: visible;
+  color: inherit;
+  background: transparent;
+}
+
+.layer {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+}
+
 .backdrop {
   position: fixed;
   inset: 0;
@@ -137,9 +157,8 @@ button:focus-visible {
 /* Non-modal "not available" notice */
 .notice {
   position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 2147483647;
+  inset: auto 16px 16px auto;
+  height: auto;
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -147,6 +166,7 @@ button:focus-visible {
   padding: 14px 8px 14px 14px;
   border: 1px solid var(--border);
   border-radius: 12px;
+  color: var(--fg);
   background: var(--bg);
   box-shadow: 0 8px 28px rgb(0 0 0 / 22%);
   font-size: 14px;

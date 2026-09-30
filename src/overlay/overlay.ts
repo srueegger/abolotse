@@ -1,5 +1,5 @@
 import { t } from '../i18n';
-import { createShadowHost, el, iconElement, mount } from './dom';
+import { createShadowUi, el, iconElement } from './dom';
 
 export interface OverlayOptions {
   targetName: string;
@@ -16,7 +16,7 @@ export interface OverlayHandle {
 /** Shows the modal redirect notice with countdown. */
 export function showOverlay(options: OverlayOptions): OverlayHandle {
   const previousFocus = document.activeElement as HTMLElement | null;
-  const { host, root } = createShadowHost('position: fixed; inset: 0; z-index: 2147483647;');
+  const ui = createShadowUi();
 
   const dialog = el('div', 'dialog');
   dialog.setAttribute('role', 'dialog');
@@ -49,7 +49,9 @@ export function showOverlay(options: OverlayOptions): OverlayHandle {
   actions.append(stayButton, readButton);
 
   dialog.append(iconElement(), heading, body, countdownText, progress, actions);
-  root.append(el('div', 'backdrop'), dialog);
+  const layer = el('div', 'layer');
+  layer.append(el('div', 'backdrop'), dialog);
+  ui.root.append(layer);
 
   let remaining = options.countdown;
   let closed = false;
@@ -74,7 +76,7 @@ export function showOverlay(options: OverlayOptions): OverlayHandle {
     closed = true;
     window.clearInterval(timer);
     document.removeEventListener('keydown', onKeydown, true);
-    host.remove();
+    ui.remove();
   }
 
   function read() {
@@ -98,7 +100,7 @@ export function showOverlay(options: OverlayOptions): OverlayHandle {
       // Focus trap between the two buttons.
       event.preventDefault();
       event.stopImmediatePropagation();
-      (root.activeElement === readButton ? stayButton : readButton).focus();
+      (ui.root.activeElement === readButton ? stayButton : readButton).focus();
     }
   }
 
@@ -106,7 +108,7 @@ export function showOverlay(options: OverlayOptions): OverlayHandle {
   stayButton.addEventListener('click', stay);
   document.addEventListener('keydown', onKeydown, true);
 
-  mount(host);
+  ui.show(layer);
   readButton.focus();
 
   return { close };

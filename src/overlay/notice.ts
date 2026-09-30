@@ -1,5 +1,5 @@
 import { t } from '../i18n';
-import { createShadowHost, el, iconElement, mount } from './dom';
+import { createShadowUi, el, iconElement } from './dom';
 
 const AUTO_HIDE_MS = 8000;
 
@@ -13,8 +13,7 @@ export interface NoticeHandle {
  * unless the pointer or keyboard focus is on it.
  */
 export function showMissingNotice(targetName: string): NoticeHandle {
-  // The host has no box of its own, so it never blocks clicks on the page.
-  const { host, root } = createShadowHost('');
+  const ui = createShadowUi();
 
   const notice = el('div', 'notice');
   notice.setAttribute('role', 'status');
@@ -31,7 +30,7 @@ export function showMissingNotice(targetName: string): NoticeHandle {
   closeButton.textContent = '×';
 
   notice.append(iconElement('notice-icon'), text, closeButton);
-  root.append(notice);
+  ui.root.append(notice);
 
   let timer: number | undefined;
   let closed = false;
@@ -45,7 +44,7 @@ export function showMissingNotice(targetName: string): NoticeHandle {
     if (closed) return;
     closed = true;
     window.clearTimeout(timer);
-    host.remove();
+    ui.remove();
   }
 
   closeButton.addEventListener('click', close);
@@ -54,7 +53,7 @@ export function showMissingNotice(targetName: string): NoticeHandle {
   notice.addEventListener('focusin', pause);
   notice.addEventListener('focusout', schedule);
 
-  mount(host);
+  ui.show(notice);
   // Fill the live region after it is in the page, otherwise screen readers
   // may not announce it.
   requestAnimationFrame(() => {

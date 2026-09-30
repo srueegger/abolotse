@@ -1,0 +1,9 @@
+node_modules/
+.output/
+.wxt/
+.web-extension-id
+web-ext.config.*
+coverage/
+*.log
+.DS_Store
+.env*

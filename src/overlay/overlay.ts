@@ -1,6 +1,5 @@
 import { t } from '../i18n';
-import css from './overlay.css?inline';
-import iconSvg from '../assets/icon.svg?raw';
+import { createShadowHost, el, iconElement, mount } from './dom';
 
 export interface OverlayOptions {
   targetName: string;
@@ -14,29 +13,16 @@ export interface OverlayHandle {
   close: () => void;
 }
 
-/**
- * Shows the redirect notice in a closed shadow root so that the news site's
- * CSS cannot affect it and ours cannot leak into the page.
- */
+/** Shows the modal redirect notice with countdown. */
 export function showOverlay(options: OverlayOptions): OverlayHandle {
   const previousFocus = document.activeElement as HTMLElement | null;
-  const host = document.createElement('abolotse-overlay');
-  host.style.cssText = 'all: initial; position: fixed; inset: 0; z-index: 2147483647;';
-  const root = host.attachShadow({ mode: 'closed' });
-
-  const style = document.createElement('style');
-  style.textContent = css;
-  const icon = new DOMParser().parseFromString(iconSvg, 'image/svg+xml').documentElement;
+  const { host, root } = createShadowHost('position: fixed; inset: 0; z-index: 2147483647;');
 
   const dialog = el('div', 'dialog');
   dialog.setAttribute('role', 'dialog');
   dialog.setAttribute('aria-modal', 'true');
   dialog.setAttribute('aria-labelledby', 'heading');
   dialog.setAttribute('aria-describedby', 'body');
-
-  const iconBox = el('div', 'icon');
-  iconBox.setAttribute('aria-hidden', 'true');
-  iconBox.append(document.importNode(icon, true));
 
   const heading = el('h2');
   heading.id = 'heading';
@@ -62,8 +48,8 @@ export function showOverlay(options: OverlayOptions): OverlayHandle {
   const actions = el('div', 'actions');
   actions.append(stayButton, readButton);
 
-  dialog.append(iconBox, heading, body, countdownText, progress, actions);
-  root.append(style, el('div', 'backdrop'), dialog);
+  dialog.append(iconElement(), heading, body, countdownText, progress, actions);
+  root.append(el('div', 'backdrop'), dialog);
 
   let remaining = options.countdown;
   let closed = false;
@@ -120,17 +106,8 @@ export function showOverlay(options: OverlayOptions): OverlayHandle {
   stayButton.addEventListener('click', stay);
   document.addEventListener('keydown', onKeydown, true);
 
-  (document.body ?? document.documentElement).appendChild(host);
+  mount(host);
   readButton.focus();
 
   return { close };
-}
-
-function el<K extends keyof HTMLElementTagNameMap>(
-  tag: K,
-  className?: string,
-): HTMLElementTagNameMap[K] {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  return node;
 }

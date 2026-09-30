@@ -4,6 +4,8 @@ import { matchPatterns } from './src/publishers';
 // See https://wxt.dev/api/config.html
 export default defineConfig({
   srcDir: 'src',
+  // WXT defaults to MV2 for Firefox; Abolotse targets MV3 everywhere.
+  manifestVersion: 3,
   modules: ['@wxt-dev/auto-icons'],
   autoIcons: {
     baseIconPath: 'assets/icon.svg',
@@ -27,6 +29,10 @@ export default defineConfig({
           data_collection_permissions: {
             required: ['none'],
           },
+        },
+        // data_collection_permissions needs Firefox for Android 142+.
+        gecko_android: {
+          strict_min_version: '142.0',
         },
       },
     }),

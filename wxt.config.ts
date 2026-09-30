@@ -4,7 +4,7 @@ import { matchPatterns } from './src/publishers';
 // See https://wxt.dev/api/config.html
 export default defineConfig({
   srcDir: 'src',
-  // WXT defaults to MV2 for Firefox; Abolotse targets MV3 everywhere.
+  // WXT defaults to MV2 for Firefox; Abo-Lotse targets MV3 everywhere.
   manifestVersion: 3,
   modules: ['@wxt-dev/auto-icons'],
   autoIcons: {

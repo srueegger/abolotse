@@ -7,7 +7,7 @@ export type BackgroundRequest = { type: 'check'; url: string } | { type: 'stay';
 /** Popup -> content script. */
 export type ContentRequest = { type: 'status' };
 
-/** What Abolotse knows about the page in a tab. Shown in the popup. */
+/** What Abo-Lotse knows about the page in a tab. Shown in the popup. */
 export type PageStatus =
   | { kind: 'checking' }
   | {

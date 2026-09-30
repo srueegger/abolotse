@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "Abolotse"
+    "message": "Abo-Lotse"
   },
   "extDescription": {
     "message": "Opens articles from sister newspapers at the Swiss newspaper you subscribe to, so you can read them with your own subscription."
@@ -108,7 +108,7 @@
     "message": "You chose to stay on this page."
   },
   "popupDisabled": {
-    "message": "Abolotse is paused."
+    "message": "Abo-Lotse is paused."
   },
   "popupNoArticle": {
     "message": "There is no article on this page."
@@ -141,19 +141,19 @@
     }
   },
   "optionsPageTitle": {
-    "message": "Abolotse settings"
+    "message": "Abo-Lotse settings"
   },
   "welcomeHeading": {
-    "message": "Welcome to Abolotse"
+    "message": "Welcome to Abo-Lotse"
   },
   "welcomeIntro": {
-    "message": "Many Swiss newspapers publish the same article on several sister titles. Choose the newspaper you subscribe to. When you open an article on a sister title, Abolotse checks whether the same article is available at your newspaper and takes you there."
+    "message": "Many Swiss newspapers publish the same article on several sister titles. Choose the newspaper you subscribe to. When you open an article on a sister title, Abo-Lotse checks whether the same article is available at your newspaper and takes you there."
   },
   "welcomeNote": {
-    "message": "Abolotse does not unlock any content. It only takes you to articles covered by your own subscription."
+    "message": "Abo-Lotse does not unlock any content. It only takes you to articles covered by your own subscription."
   },
   "welcomeDone": {
-    "message": "All set. You can close this tab and change these settings at any time from the Abolotse icon."
+    "message": "All set. You can close this tab and change these settings at any time from the Abo-Lotse icon."
   },
   "optionsOwnTitleHeading": {
     "message": "Your newspaper"
@@ -204,10 +204,10 @@
     "message": "Privacy"
   },
   "optionsPrivacy": {
-    "message": "Abolotse collects no data and uses no external servers. To check whether an article exists, it only contacts the newspaper websites listed above. Your settings are stored in your browser."
+    "message": "Abo-Lotse collects no data and uses no external servers. To check whether an article exists, it only contacts the newspaper websites listed above. Your settings are stored in your browser."
   },
   "permissionsMissing": {
-    "message": "Abolotse needs access to the newspaper websites to work."
+    "message": "Abo-Lotse needs access to the newspaper websites to work."
   },
   "permissionsGrant": {
     "message": "Allow access"

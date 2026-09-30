@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "Abolotse"
+    "message": "Abo-Lotse"
   },
   "extDescription": {
     "message": "Apre gli articoli delle testate sorelle nel giornale svizzero che ha in abbonamento, così può leggerli con il suo abbonamento."
@@ -108,7 +108,7 @@
     "message": "Ha scelto di restare su questa pagina."
   },
   "popupDisabled": {
-    "message": "Abolotse è in pausa."
+    "message": "Abo-Lotse è in pausa."
   },
   "popupNoArticle": {
     "message": "In questa pagina non c’è nessun articolo."
@@ -141,19 +141,19 @@
     }
   },
   "optionsPageTitle": {
-    "message": "Abolotse – Impostazioni"
+    "message": "Abo-Lotse – Impostazioni"
   },
   "welcomeHeading": {
-    "message": "Benvenuti in Abolotse"
+    "message": "Benvenuti in Abo-Lotse"
   },
   "welcomeIntro": {
-    "message": "Molti giornali svizzeri pubblicano lo stesso articolo su diverse testate sorelle. Scelga il giornale che ha in abbonamento. Quando apre un articolo di una testata sorella, Abolotse verifica se lo stesso articolo è disponibile nel suo giornale e la porta lì."
+    "message": "Molti giornali svizzeri pubblicano lo stesso articolo su diverse testate sorelle. Scelga il giornale che ha in abbonamento. Quando apre un articolo di una testata sorella, Abo-Lotse verifica se lo stesso articolo è disponibile nel suo giornale e la porta lì."
   },
   "welcomeNote": {
-    "message": "Abolotse non sblocca alcun contenuto. L’estensione la porta solo agli articoli inclusi nel suo abbonamento."
+    "message": "Abo-Lotse non sblocca alcun contenuto. L’estensione la porta solo agli articoli inclusi nel suo abbonamento."
   },
   "welcomeDone": {
-    "message": "Tutto pronto. Può chiudere questa scheda e modificare le impostazioni in qualsiasi momento tramite l’icona di Abolotse."
+    "message": "Tutto pronto. Può chiudere questa scheda e modificare le impostazioni in qualsiasi momento tramite l’icona di Abo-Lotse."
   },
   "optionsOwnTitleHeading": {
     "message": "Il suo giornale"
@@ -204,10 +204,10 @@
     "message": "Protezione dei dati"
   },
   "optionsPrivacy": {
-    "message": "Abolotse non raccoglie dati e non utilizza server esterni. Per verificare se un articolo esiste, l’estensione contatta solo i siti dei giornali elencati sopra. Le sue impostazioni sono salvate nel browser."
+    "message": "Abo-Lotse non raccoglie dati e non utilizza server esterni. Per verificare se un articolo esiste, l’estensione contatta solo i siti dei giornali elencati sopra. Le sue impostazioni sono salvate nel browser."
   },
   "permissionsMissing": {
-    "message": "Abolotse ha bisogno di accedere ai siti dei giornali per funzionare."
+    "message": "Abo-Lotse ha bisogno di accedere ai siti dei giornali per funzionare."
   },
   "permissionsGrant": {
     "message": "Consenti l’accesso"

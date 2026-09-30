@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "Abolotse"
+    "message": "Abo-Lotse"
   },
   "extDescription": {
     "message": "Öffnet Artikel von Schwestertiteln bei Ihrer abonnierten Schweizer Zeitung, damit Sie sie mit Ihrem eigenen Abo lesen können."
@@ -108,7 +108,7 @@
     "message": "Sie haben gewählt, auf dieser Seite zu bleiben."
   },
   "popupDisabled": {
-    "message": "Abolotse ist pausiert."
+    "message": "Abo-Lotse ist pausiert."
   },
   "popupNoArticle": {
     "message": "Auf dieser Seite ist kein Artikel."
@@ -141,19 +141,19 @@
     }
   },
   "optionsPageTitle": {
-    "message": "Abolotse – Einstellungen"
+    "message": "Abo-Lotse – Einstellungen"
   },
   "welcomeHeading": {
-    "message": "Willkommen bei Abolotse"
+    "message": "Willkommen bei Abo-Lotse"
   },
   "welcomeIntro": {
-    "message": "Viele Schweizer Zeitungen veröffentlichen denselben Artikel auf mehreren Schwestertiteln. Wählen Sie die Zeitung, die Sie abonniert haben. Öffnen Sie einen Artikel eines Schwestertitels, prüft Abolotse, ob derselbe Artikel bei Ihrer Zeitung verfügbar ist, und führt Sie dorthin."
+    "message": "Viele Schweizer Zeitungen veröffentlichen denselben Artikel auf mehreren Schwestertiteln. Wählen Sie die Zeitung, die Sie abonniert haben. Öffnen Sie einen Artikel eines Schwestertitels, prüft Abo-Lotse, ob derselbe Artikel bei Ihrer Zeitung verfügbar ist, und führt Sie dorthin."
   },
   "welcomeNote": {
-    "message": "Abolotse schaltet keine Inhalte frei. Die Erweiterung führt Sie nur zu Artikeln, die Ihr eigenes Abo umfasst."
+    "message": "Abo-Lotse schaltet keine Inhalte frei. Die Erweiterung führt Sie nur zu Artikeln, die Ihr eigenes Abo umfasst."
   },
   "welcomeDone": {
-    "message": "Alles bereit. Sie können diesen Tab schliessen und die Einstellungen jederzeit über das Abolotse-Symbol ändern."
+    "message": "Alles bereit. Sie können diesen Tab schliessen und die Einstellungen jederzeit über das Abo-Lotse-Symbol ändern."
   },
   "optionsOwnTitleHeading": {
     "message": "Ihre Zeitung"
@@ -204,10 +204,10 @@
     "message": "Datenschutz"
   },
   "optionsPrivacy": {
-    "message": "Abolotse erhebt keine Daten und nutzt keine externen Server. Um zu prüfen, ob ein Artikel existiert, kontaktiert die Erweiterung nur die oben aufgeführten Zeitungswebsites. Ihre Einstellungen werden in Ihrem Browser gespeichert."
+    "message": "Abo-Lotse erhebt keine Daten und nutzt keine externen Server. Um zu prüfen, ob ein Artikel existiert, kontaktiert die Erweiterung nur die oben aufgeführten Zeitungswebsites. Ihre Einstellungen werden in Ihrem Browser gespeichert."
   },
   "permissionsMissing": {
-    "message": "Abolotse braucht Zugriff auf die Zeitungswebsites, um zu funktionieren."
+    "message": "Abo-Lotse braucht Zugriff auf die Zeitungswebsites, um zu funktionieren."
   },
   "permissionsGrant": {
     "message": "Zugriff erlauben"

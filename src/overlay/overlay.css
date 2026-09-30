@@ -7,16 +7,6 @@
   --border: #d0d7de;
   --backdrop: rgb(10 20 30 / 45%);
   --focus: #0969da;
-
-  font-family:
-    system-ui,
-    -apple-system,
-    'Segoe UI',
-    Roboto,
-    sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--fg);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,7 +35,19 @@
   animation: fade-in 150ms ease-out;
 }
 
+/* Typography lives here, not on :host: the host's inline `all: initial`
+   wins over :host rules and would reset the font to the browser default. */
 .dialog {
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--fg);
   position: fixed;
   top: 50%;
   left: 50%;

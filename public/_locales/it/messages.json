@@ -205,5 +205,11 @@
   },
   "optionsPrivacy": {
     "message": "Abolotse non raccoglie dati e non utilizza server esterni. Per verificare se un articolo esiste, l’estensione contatta solo i siti dei giornali elencati sopra. Le sue impostazioni sono salvate nel browser."
+  },
+  "permissionsMissing": {
+    "message": "Abolotse ha bisogno di accedere ai siti dei giornali per funzionare."
+  },
+  "permissionsGrant": {
+    "message": "Consenti l’accesso"
   }
 }

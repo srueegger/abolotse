@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="manifest.open_in_tab" content="true" />
+    <title>Abolotse</title>
+    <link rel="stylesheet" href="../../ui/base.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="../../assets/icon.svg" alt="" width="48" height="48" />
+        <h1 id="page-heading"></h1>
+      </header>
+
+      <section id="welcome" hidden>
+        <p data-i18n="welcomeIntro"></p>
+        <p class="note" data-i18n="welcomeNote"></p>
+      </section>
+
+      <div id="permissions" class="banner" role="alert" hidden>
+        <p data-i18n="permissionsMissing"></p>
+        <button type="button" id="grant" data-i18n="permissionsGrant"></button>
+      </div>
+
+      <section aria-labelledby="own-heading">
+        <h2 id="own-heading" data-i18n="optionsOwnTitleHeading"></h2>
+        <p class="muted" data-i18n="optionsOwnTitleHelp"></p>
+        <div id="own-titles"></div>
+        <p id="welcome-done" class="done" hidden data-i18n="welcomeDone"></p>
+      </section>
+
+      <section aria-labelledby="general-heading">
+        <h2 id="general-heading" data-i18n="optionsGeneralHeading"></h2>
+        <label class="row">
+          <input type="checkbox" id="enabled" />
+          <span data-i18n="optionsEnabled"></span>
+        </label>
+        <label class="stack" for="countdown">
+          <span data-i18n="optionsCountdown"></span>
+          <span class="slider">
+            <input type="range" id="countdown" min="0" max="5" step="1" />
+            <output id="countdown-value" for="countdown"></output>
+          </span>
+        </label>
+      </section>
+
+      <section aria-labelledby="exclude-heading">
+        <h2 id="exclude-heading" data-i18n="optionsExcludeHeading"></h2>
+        <p class="muted" data-i18n="optionsExcludeHelp"></p>
+        <div id="excluded"></div>
+      </section>
+
+      <section aria-labelledby="privacy-heading">
+        <h2 id="privacy-heading" data-i18n="optionsPrivacyHeading"></h2>
+        <p class="muted" data-i18n="optionsPrivacy"></p>
+      </section>
+
+      <p id="saved" class="saved" role="status" aria-live="polite"></p>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

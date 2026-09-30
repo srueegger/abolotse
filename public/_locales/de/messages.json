@@ -205,5 +205,11 @@
   },
   "optionsPrivacy": {
     "message": "Abolotse erhebt keine Daten und nutzt keine externen Server. Um zu prüfen, ob ein Artikel existiert, kontaktiert die Erweiterung nur die oben aufgeführten Zeitungswebsites. Ihre Einstellungen werden in Ihrem Browser gespeichert."
+  },
+  "permissionsMissing": {
+    "message": "Abolotse braucht Zugriff auf die Zeitungswebsites, um zu funktionieren."
+  },
+  "permissionsGrant": {
+    "message": "Zugriff erlauben"
   }
 }

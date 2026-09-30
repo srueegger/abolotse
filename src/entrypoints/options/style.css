@@ -1,0 +1,125 @@
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6em;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 0 0 4px;
+  font-size: 1.1em;
+}
+
+section,
+.banner {
+  margin-bottom: 16px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+section p {
+  margin: 0 0 12px;
+}
+
+#welcome p:last-child {
+  margin-bottom: 0;
+}
+
+.note {
+  font-weight: 600;
+}
+
+.banner {
+  background: var(--warn-bg);
+  border-color: var(--warn-border);
+}
+
+.banner p {
+  margin: 0 0 12px;
+}
+
+fieldset {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 32px;
+  cursor: pointer;
+}
+
+.row input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.row:has(input:disabled) {
+  cursor: default;
+  color: var(--muted);
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  column-gap: 16px;
+}
+
+.stack {
+  display: grid;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider input {
+  flex: 0 1 200px;
+  accent-color: var(--accent);
+}
+
+output {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.done {
+  margin: 8px 0 0;
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.saved {
+  min-height: 1.5em;
+  margin: 0;
+  color: var(--ok);
+  text-align: center;
+}

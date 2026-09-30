@@ -205,5 +205,11 @@
   },
   "optionsPrivacy": {
     "message": "Abolotse collects no data and uses no external servers. To check whether an article exists, it only contacts the newspaper websites listed above. Your settings are stored in your browser."
+  },
+  "permissionsMissing": {
+    "message": "Abolotse needs access to the newspaper websites to work."
+  },
+  "permissionsGrant": {
+    "message": "Allow access"
   }
 }

@@ -4,15 +4,23 @@ import type { Settings } from './settings';
 import { buildTargetUrl } from './url';
 
 export type SkipReason =
-  'disabled' | 'not-article' | 'no-own-title' | 'own-title' | 'excluded-source' | 'user-stayed';
+  'disabled' | 'not-article' | 'no-own-title' | 'own-title' | 'excluded-source';
 
 export type Decision =
   | { action: 'skip'; reason: SkipReason; article?: ArticleMatch }
-  | { action: 'check'; article: ArticleMatch; target: TitleMatch; targetUrl: string };
+  | {
+      action: 'check';
+      article: ArticleMatch;
+      target: TitleMatch;
+      targetUrl: string;
+      /** The user chose "stay here" for this article: check, but never redirect. */
+      stayed: boolean;
+    };
 
 /**
  * Decides whether a page is a candidate for a redirect. Pure: the existence
- * check on the target title happens afterwards and only for `check` results.
+ * check on the target title happens afterwards and only for `check` results;
+ * a redirect is allowed only if the article exists there and `stayed` is false.
  */
 export function decideRedirect(
   url: URL,
@@ -34,15 +42,12 @@ export function decideRedirect(
   if (settings.excludedSources.includes(article.title.id)) {
     return { action: 'skip', reason: 'excluded-source', article };
   }
-  if (stayedArticleIds.has(stayKey(article))) {
-    return { action: 'skip', reason: 'user-stayed', article };
-  }
-
   return {
     action: 'check',
     article,
     target,
     targetUrl: buildTargetUrl(article.group, target.title, url),
+    stayed: stayedArticleIds.has(stayKey(article)),
   };
 }
 

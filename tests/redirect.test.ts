@@ -17,6 +17,7 @@ describe('decideRedirect', () => {
       action: 'check',
       target: { title: { id: 'bazonline' } },
       targetUrl: 'https://www.bazonline.ch/slug-283418639546',
+      stayed: false,
     });
   });
 
@@ -48,10 +49,11 @@ describe('decideRedirect', () => {
     expect(decideRedirect(new URL(ARTICLE), s, none)).toMatchObject({ reason: 'excluded-source' });
   });
 
-  it('respects "stay here" for the article', () => {
+  it('checks but flags articles the user chose to stay on', () => {
     const stayed = new Set(['tamedia-de:283418639546']);
     expect(decideRedirect(new URL(ARTICLE), settings(), stayed)).toMatchObject({
-      reason: 'user-stayed',
+      action: 'check',
+      stayed: true,
     });
   });
 

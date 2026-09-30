@@ -37,3 +37,9 @@ describe('locales', () => {
     }
   });
 });
+
+describe('store limits', () => {
+  it.each(Object.keys(locales))('%s description fits the Chrome Web Store limit', (lang) => {
+    expect(locales[lang]!.extDescription!.message.length).toBeLessThanOrEqual(132);
+  });
+});

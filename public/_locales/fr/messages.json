@@ -1,0 +1,209 @@
+{
+  "extName": {
+    "message": "Abolotse"
+  },
+  "extDescription": {
+    "message": "Ouvre les articles des titres partenaires dans le journal suisse dont vous avez l’abonnement, pour que vous puissiez les lire avec votre propre abonnement."
+  },
+  "overlayHeading": {
+    "message": "Aussi disponible dans $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "overlayBody": {
+    "message": "Cet article est aussi disponible dans $TITLE$. Il va s’ouvrir dans ce journal pour que vous puissiez le lire avec votre abonnement.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "overlayCountdownOne": {
+    "message": "Redirection dans 1 seconde…"
+  },
+  "overlayCountdownOther": {
+    "message": "Redirection dans $COUNT$ secondes…",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "overlayRedirecting": {
+    "message": "Redirection en cours…"
+  },
+  "overlayReadNow": {
+    "message": "Lire maintenant"
+  },
+  "overlayStay": {
+    "message": "Rester ici"
+  },
+  "popupChecking": {
+    "message": "Vérification de la disponibilité…"
+  },
+  "popupAvailable": {
+    "message": "Article disponible dans $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupOpenAt": {
+    "message": "Ouvrir dans $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupMissing": {
+    "message": "Pas disponible dans $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupUnknown": {
+    "message": "La disponibilité dans $TITLE$ n’a pas pu être vérifiée.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupOwnTitle": {
+    "message": "Vous lisez $TITLE$, votre propre journal.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupNoOwnTitle": {
+    "message": "Aucun journal choisi pour $GROUP$.",
+    "placeholders": {
+      "group": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupExcluded": {
+    "message": "Les redirections depuis ce site sont désactivées."
+  },
+  "popupStayed": {
+    "message": "Vous avez choisi de rester sur cette page."
+  },
+  "popupDisabled": {
+    "message": "Abolotse est en pause."
+  },
+  "popupNoArticle": {
+    "message": "Il n’y a pas d’article sur cette page."
+  },
+  "popupUnsupported": {
+    "message": "Ce site n’est pas pris en charge."
+  },
+  "popupEnabled": {
+    "message": "Actif"
+  },
+  "popupSettings": {
+    "message": "Paramètres"
+  },
+  "badgeAvailable": {
+    "message": "Article disponible dans $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "badgeMissing": {
+    "message": "Pas disponible dans $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "optionsPageTitle": {
+    "message": "Abolotse – Paramètres"
+  },
+  "welcomeHeading": {
+    "message": "Bienvenue dans Abolotse"
+  },
+  "welcomeIntro": {
+    "message": "De nombreux journaux suisses publient le même article sur plusieurs titres partenaires. Choisissez le journal dont vous avez l’abonnement. Lorsque vous ouvrez un article d’un titre partenaire, Abolotse vérifie si le même article est disponible dans votre journal et vous y conduit."
+  },
+  "welcomeNote": {
+    "message": "Abolotse ne débloque aucun contenu. L’extension vous conduit uniquement vers des articles couverts par votre propre abonnement."
+  },
+  "welcomeDone": {
+    "message": "Tout est prêt. Vous pouvez fermer cet onglet et modifier ces réglages à tout moment via l’icône d’Abolotse."
+  },
+  "optionsOwnTitleHeading": {
+    "message": "Votre journal"
+  },
+  "optionsOwnTitleHelp": {
+    "message": "Choisissez le journal dont vous avez l’abonnement, au maximum un par groupe d’éditeurs."
+  },
+  "optionsNone": {
+    "message": "Aucun"
+  },
+  "optionsGeneralHeading": {
+    "message": "Général"
+  },
+  "optionsEnabled": {
+    "message": "Rediriger vers mon journal"
+  },
+  "optionsCountdown": {
+    "message": "Avis avant la redirection"
+  },
+  "optionsCountdownZero": {
+    "message": "Rediriger immédiatement sans avis"
+  },
+  "optionsCountdownOne": {
+    "message": "1 seconde"
+  },
+  "optionsCountdownOther": {
+    "message": "$COUNT$ secondes",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "optionsExcludeHeading": {
+    "message": "Sites exclus"
+  },
+  "optionsExcludeHelp": {
+    "message": "Ne jamais rediriger lorsque vous ouvrez un article sur ces sites."
+  },
+  "optionsOwnTitleMarker": {
+    "message": "votre journal"
+  },
+  "optionsSaved": {
+    "message": "Enregistré"
+  },
+  "optionsPrivacyHeading": {
+    "message": "Protection des données"
+  },
+  "optionsPrivacy": {
+    "message": "Abolotse ne collecte aucune donnée et n’utilise aucun serveur externe. Pour vérifier si un article existe, l’extension contacte uniquement les sites de journaux listés ci-dessus. Vos réglages sont enregistrés dans votre navigateur."
+  }
+}

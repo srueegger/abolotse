@@ -1,0 +1,209 @@
+{
+  "extName": {
+    "message": "Abolotse"
+  },
+  "extDescription": {
+    "message": "Apre gli articoli delle testate sorelle nel giornale svizzero che ha in abbonamento, così può leggerli con il suo abbonamento."
+  },
+  "overlayHeading": {
+    "message": "Disponibile anche su $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "overlayBody": {
+    "message": "Questo articolo è disponibile anche su $TITLE$. Si aprirà in questo giornale, così potrà leggerlo con il suo abbonamento.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "overlayCountdownOne": {
+    "message": "Reindirizzamento tra 1 secondo…"
+  },
+  "overlayCountdownOther": {
+    "message": "Reindirizzamento tra $COUNT$ secondi…",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "overlayRedirecting": {
+    "message": "Reindirizzamento in corso…"
+  },
+  "overlayReadNow": {
+    "message": "Leggi ora"
+  },
+  "overlayStay": {
+    "message": "Resta qui"
+  },
+  "popupChecking": {
+    "message": "Verifica della disponibilità…"
+  },
+  "popupAvailable": {
+    "message": "Articolo disponibile su $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupOpenAt": {
+    "message": "Apri su $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupMissing": {
+    "message": "Non disponibile su $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupUnknown": {
+    "message": "Non è stato possibile verificare la disponibilità su $TITLE$.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupOwnTitle": {
+    "message": "Sta leggendo $TITLE$, il suo giornale.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupNoOwnTitle": {
+    "message": "Nessun giornale scelto per $GROUP$.",
+    "placeholders": {
+      "group": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupExcluded": {
+    "message": "I reindirizzamenti da questo sito sono disattivati."
+  },
+  "popupStayed": {
+    "message": "Ha scelto di restare su questa pagina."
+  },
+  "popupDisabled": {
+    "message": "Abolotse è in pausa."
+  },
+  "popupNoArticle": {
+    "message": "In questa pagina non c’è nessun articolo."
+  },
+  "popupUnsupported": {
+    "message": "Questo sito non è supportato."
+  },
+  "popupEnabled": {
+    "message": "Attivo"
+  },
+  "popupSettings": {
+    "message": "Impostazioni"
+  },
+  "badgeAvailable": {
+    "message": "Articolo disponibile su $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "badgeMissing": {
+    "message": "Non disponibile su $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "optionsPageTitle": {
+    "message": "Abolotse – Impostazioni"
+  },
+  "welcomeHeading": {
+    "message": "Benvenuti in Abolotse"
+  },
+  "welcomeIntro": {
+    "message": "Molti giornali svizzeri pubblicano lo stesso articolo su diverse testate sorelle. Scelga il giornale che ha in abbonamento. Quando apre un articolo di una testata sorella, Abolotse verifica se lo stesso articolo è disponibile nel suo giornale e la porta lì."
+  },
+  "welcomeNote": {
+    "message": "Abolotse non sblocca alcun contenuto. L’estensione la porta solo agli articoli inclusi nel suo abbonamento."
+  },
+  "welcomeDone": {
+    "message": "Tutto pronto. Può chiudere questa scheda e modificare le impostazioni in qualsiasi momento tramite l’icona di Abolotse."
+  },
+  "optionsOwnTitleHeading": {
+    "message": "Il suo giornale"
+  },
+  "optionsOwnTitleHelp": {
+    "message": "Scelga il giornale che ha in abbonamento, al massimo uno per gruppo editoriale."
+  },
+  "optionsNone": {
+    "message": "Nessuno"
+  },
+  "optionsGeneralHeading": {
+    "message": "Generale"
+  },
+  "optionsEnabled": {
+    "message": "Reindirizza al mio giornale"
+  },
+  "optionsCountdown": {
+    "message": "Avviso prima del reindirizzamento"
+  },
+  "optionsCountdownZero": {
+    "message": "Reindirizza subito senza avviso"
+  },
+  "optionsCountdownOne": {
+    "message": "1 secondo"
+  },
+  "optionsCountdownOther": {
+    "message": "$COUNT$ secondi",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "optionsExcludeHeading": {
+    "message": "Siti esclusi"
+  },
+  "optionsExcludeHelp": {
+    "message": "Non reindirizzare mai quando apre un articolo su questi siti."
+  },
+  "optionsOwnTitleMarker": {
+    "message": "il suo giornale"
+  },
+  "optionsSaved": {
+    "message": "Salvato"
+  },
+  "optionsPrivacyHeading": {
+    "message": "Protezione dei dati"
+  },
+  "optionsPrivacy": {
+    "message": "Abolotse non raccoglie dati e non utilizza server esterni. Per verificare se un articolo esiste, l’estensione contatta solo i siti dei giornali elencati sopra. Le sue impostazioni sono salvate nel browser."
+  }
+}

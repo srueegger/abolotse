@@ -1,0 +1,209 @@
+{
+  "extName": {
+    "message": "Abolotse"
+  },
+  "extDescription": {
+    "message": "Opens articles from sister newspapers at the Swiss newspaper you subscribe to, so you can read them with your own subscription."
+  },
+  "overlayHeading": {
+    "message": "Also available at $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "overlayBody": {
+    "message": "This article is also available at $TITLE$. You will be taken there so you can read it with your subscription.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "overlayCountdownOne": {
+    "message": "Redirecting in 1 second …"
+  },
+  "overlayCountdownOther": {
+    "message": "Redirecting in $COUNT$ seconds …",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "overlayRedirecting": {
+    "message": "Redirecting …"
+  },
+  "overlayReadNow": {
+    "message": "Read now"
+  },
+  "overlayStay": {
+    "message": "Stay here"
+  },
+  "popupChecking": {
+    "message": "Checking availability …"
+  },
+  "popupAvailable": {
+    "message": "Article available at $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupOpenAt": {
+    "message": "Open at $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupMissing": {
+    "message": "Not available at $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupUnknown": {
+    "message": "Availability at $TITLE$ could not be checked.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupOwnTitle": {
+    "message": "You are reading $TITLE$, your own newspaper.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupNoOwnTitle": {
+    "message": "No newspaper chosen for $GROUP$ yet.",
+    "placeholders": {
+      "group": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupExcluded": {
+    "message": "Redirects from this site are turned off."
+  },
+  "popupStayed": {
+    "message": "You chose to stay on this page."
+  },
+  "popupDisabled": {
+    "message": "Abolotse is paused."
+  },
+  "popupNoArticle": {
+    "message": "There is no article on this page."
+  },
+  "popupUnsupported": {
+    "message": "This website is not supported."
+  },
+  "popupEnabled": {
+    "message": "Active"
+  },
+  "popupSettings": {
+    "message": "Settings"
+  },
+  "badgeAvailable": {
+    "message": "Article available at $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "badgeMissing": {
+    "message": "Not available at $TITLE$",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "optionsPageTitle": {
+    "message": "Abolotse settings"
+  },
+  "welcomeHeading": {
+    "message": "Welcome to Abolotse"
+  },
+  "welcomeIntro": {
+    "message": "Many Swiss newspapers publish the same article on several sister titles. Choose the newspaper you subscribe to. When you open an article on a sister title, Abolotse checks whether the same article is available at your newspaper and takes you there."
+  },
+  "welcomeNote": {
+    "message": "Abolotse does not unlock any content. It only takes you to articles covered by your own subscription."
+  },
+  "welcomeDone": {
+    "message": "All set. You can close this tab and change these settings at any time from the Abolotse icon."
+  },
+  "optionsOwnTitleHeading": {
+    "message": "Your newspaper"
+  },
+  "optionsOwnTitleHelp": {
+    "message": "Choose the newspaper you subscribe to, at most one per publisher group."
+  },
+  "optionsNone": {
+    "message": "None"
+  },
+  "optionsGeneralHeading": {
+    "message": "General"
+  },
+  "optionsEnabled": {
+    "message": "Redirect to my newspaper"
+  },
+  "optionsCountdown": {
+    "message": "Notice before redirecting"
+  },
+  "optionsCountdownZero": {
+    "message": "Redirect immediately without notice"
+  },
+  "optionsCountdownOne": {
+    "message": "1 second"
+  },
+  "optionsCountdownOther": {
+    "message": "$COUNT$ seconds",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "optionsExcludeHeading": {
+    "message": "Excluded websites"
+  },
+  "optionsExcludeHelp": {
+    "message": "Never redirect when you open an article on these websites."
+  },
+  "optionsOwnTitleMarker": {
+    "message": "your newspaper"
+  },
+  "optionsSaved": {
+    "message": "Saved"
+  },
+  "optionsPrivacyHeading": {
+    "message": "Privacy"
+  },
+  "optionsPrivacy": {
+    "message": "Abolotse collects no data and uses no external servers. To check whether an article exists, it only contacts the newspaper websites listed above. Your settings are stored in your browser."
+  }
+}

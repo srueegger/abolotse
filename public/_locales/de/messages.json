@@ -1,0 +1,209 @@
+{
+  "extName": {
+    "message": "Abolotse"
+  },
+  "extDescription": {
+    "message": "Öffnet Artikel von Schwestertiteln bei Ihrer abonnierten Schweizer Zeitung, damit Sie sie mit Ihrem eigenen Abo lesen können."
+  },
+  "overlayHeading": {
+    "message": "Auch bei $TITLE$ verfügbar",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "overlayBody": {
+    "message": "Dieser Artikel ist auch bei $TITLE$ verfügbar. Sie werden weitergeleitet, damit Sie ihn mit Ihrem Abo lesen können.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "overlayCountdownOne": {
+    "message": "Weiterleitung in 1 Sekunde …"
+  },
+  "overlayCountdownOther": {
+    "message": "Weiterleitung in $COUNT$ Sekunden …",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "overlayRedirecting": {
+    "message": "Sie werden weitergeleitet …"
+  },
+  "overlayReadNow": {
+    "message": "Jetzt lesen"
+  },
+  "overlayStay": {
+    "message": "Hier bleiben"
+  },
+  "popupChecking": {
+    "message": "Verfügbarkeit wird geprüft …"
+  },
+  "popupAvailable": {
+    "message": "Artikel bei $TITLE$ verfügbar",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupOpenAt": {
+    "message": "Bei $TITLE$ öffnen",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupMissing": {
+    "message": "Bei $TITLE$ nicht verfügbar",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupUnknown": {
+    "message": "Die Verfügbarkeit bei $TITLE$ konnte nicht geprüft werden.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupOwnTitle": {
+    "message": "Sie lesen $TITLE$, Ihre eigene Zeitung.",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupNoOwnTitle": {
+    "message": "Für $GROUP$ ist noch keine Zeitung gewählt.",
+    "placeholders": {
+      "group": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "popupExcluded": {
+    "message": "Weiterleitungen von dieser Seite sind ausgeschaltet."
+  },
+  "popupStayed": {
+    "message": "Sie haben gewählt, auf dieser Seite zu bleiben."
+  },
+  "popupDisabled": {
+    "message": "Abolotse ist pausiert."
+  },
+  "popupNoArticle": {
+    "message": "Auf dieser Seite ist kein Artikel."
+  },
+  "popupUnsupported": {
+    "message": "Diese Website wird nicht unterstützt."
+  },
+  "popupEnabled": {
+    "message": "Aktiv"
+  },
+  "popupSettings": {
+    "message": "Einstellungen"
+  },
+  "badgeAvailable": {
+    "message": "Artikel bei $TITLE$ verfügbar",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "badgeMissing": {
+    "message": "Bei $TITLE$ nicht verfügbar",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Basler Zeitung"
+      }
+    }
+  },
+  "optionsPageTitle": {
+    "message": "Abolotse – Einstellungen"
+  },
+  "welcomeHeading": {
+    "message": "Willkommen bei Abolotse"
+  },
+  "welcomeIntro": {
+    "message": "Viele Schweizer Zeitungen veröffentlichen denselben Artikel auf mehreren Schwestertiteln. Wählen Sie die Zeitung, die Sie abonniert haben. Öffnen Sie einen Artikel eines Schwestertitels, prüft Abolotse, ob derselbe Artikel bei Ihrer Zeitung verfügbar ist, und führt Sie dorthin."
+  },
+  "welcomeNote": {
+    "message": "Abolotse schaltet keine Inhalte frei. Die Erweiterung führt Sie nur zu Artikeln, die Ihr eigenes Abo umfasst."
+  },
+  "welcomeDone": {
+    "message": "Alles bereit. Sie können diesen Tab schliessen und die Einstellungen jederzeit über das Abolotse-Symbol ändern."
+  },
+  "optionsOwnTitleHeading": {
+    "message": "Ihre Zeitung"
+  },
+  "optionsOwnTitleHelp": {
+    "message": "Wählen Sie die Zeitung, die Sie abonniert haben, höchstens eine pro Verlagsgruppe."
+  },
+  "optionsNone": {
+    "message": "Keine"
+  },
+  "optionsGeneralHeading": {
+    "message": "Allgemein"
+  },
+  "optionsEnabled": {
+    "message": "Zu meiner Zeitung weiterleiten"
+  },
+  "optionsCountdown": {
+    "message": "Hinweis vor der Weiterleitung"
+  },
+  "optionsCountdownZero": {
+    "message": "Sofort ohne Hinweis weiterleiten"
+  },
+  "optionsCountdownOne": {
+    "message": "1 Sekunde"
+  },
+  "optionsCountdownOther": {
+    "message": "$COUNT$ Sekunden",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "optionsExcludeHeading": {
+    "message": "Ausgeschlossene Websites"
+  },
+  "optionsExcludeHelp": {
+    "message": "Nie weiterleiten, wenn Sie einen Artikel auf diesen Websites öffnen."
+  },
+  "optionsOwnTitleMarker": {
+    "message": "Ihre Zeitung"
+  },
+  "optionsSaved": {
+    "message": "Gespeichert"
+  },
+  "optionsPrivacyHeading": {
+    "message": "Datenschutz"
+  },
+  "optionsPrivacy": {
+    "message": "Abolotse erhebt keine Daten und nutzt keine externen Server. Um zu prüfen, ob ein Artikel existiert, kontaktiert die Erweiterung nur die oben aufgeführten Zeitungswebsites. Ihre Einstellungen werden in Ihrem Browser gespeichert."
+  }
+}

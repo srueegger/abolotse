@@ -20,7 +20,7 @@ HOW IT WORKS
 • Choose your newspaper on the welcome page (at most one per publisher group).
 • A short notice tells you where you are being taken. "Read now" goes straight away, "Stay here" keeps you on the page and is remembered for that article.
 • The countdown is adjustable from 0 to 5 seconds. With 0 you are taken there immediately.
-• If the article is not available at your newspaper, nothing happens. The icon shows a small grey mark.
+• If the article is not available at your newspaper, you stay on the page and a small notice in the corner tells you so. It can be turned off.
 • Tracking parameters such as utm_* or fbclid are removed on the way.
 
 SUPPORTED NEWSPAPERS (Tamedia)

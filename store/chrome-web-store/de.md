@@ -20,7 +20,7 @@ SO FUNKTIONIERT ES
 • Wählen Sie Ihre Zeitung auf der Willkommensseite (höchstens eine pro Verlagsgruppe).
 • Ein kurzer Hinweis zeigt, wohin Sie weitergeleitet werden. «Jetzt lesen» wechselt sofort, «Hier bleiben» lässt Sie auf der Seite und gilt für diesen Artikel weiter.
 • Der Countdown ist von 0 bis 5 Sekunden einstellbar. Mit 0 werden Sie sofort weitergeleitet.
-• Ist der Artikel bei Ihrer Zeitung nicht verfügbar, passiert nichts. Das Symbol zeigt dann eine kleine graue Markierung.
+• Ist der Artikel bei Ihrer Zeitung nicht verfügbar, bleiben Sie auf der Seite, und ein kleiner Hinweis in der Ecke sagt Ihnen das. Er lässt sich ausschalten.
 • Tracking-Parameter wie utm_* oder fbclid werden dabei entfernt.
 
 UNTERSTÜTZTE ZEITUNGEN (Tamedia)

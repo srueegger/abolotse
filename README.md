@@ -35,8 +35,10 @@ redirect to sections of the titles above and are covered through them.
   other query parameters and the hash are kept.
 - Never redirects away from your own newspaper, never across publisher groups,
   and never on network errors or timeouts (3 s).
-- The popup shows the status for the current tab. A grey "–" badge means the
-  article is not available at your newspaper.
+- If the article is not available at your newspaper, you stay on the page and
+  a small, non-modal notice says so (once per article and session, can be
+  turned off). The toolbar icon then shows a grey "–".
+- The popup shows the status for the current tab.
 - English, German, French and Italian.
 
 ## Privacy

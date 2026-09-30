@@ -20,7 +20,7 @@ COME FUNZIONA
 • Scelga il suo giornale nella pagina di benvenuto (al massimo uno per gruppo editoriale).
 • Un breve avviso indica verso quale giornale viene portato. «Leggi ora» apre subito l’articolo, «Resta qui» la lascia sulla pagina e resta valido per quell’articolo.
 • Il conto alla rovescia è regolabile da 0 a 5 secondi. Con 0 il reindirizzamento è immediato.
-• Se l’articolo non è disponibile nel suo giornale, non succede nulla. L’icona mostra un piccolo segno grigio.
+• Se l’articolo non è disponibile nel suo giornale, rimane sulla pagina e un piccolo avviso nell’angolo glielo segnala. Può essere disattivato.
 • I parametri di tracciamento come utm_* o fbclid vengono rimossi.
 
 GIORNALI SUPPORTATI (Tamedia)

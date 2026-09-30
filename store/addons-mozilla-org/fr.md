@@ -20,7 +20,7 @@ FONCTIONNEMENT
 • Choisissez votre journal sur la page d’accueil (au maximum un par groupe d’éditeurs).
 • Un bref avis indique vers quel journal vous êtes conduit. « Lire maintenant » y va tout de suite, « Rester ici » vous laisse sur la page et reste valable pour cet article.
 • Le compte à rebours est réglable de 0 à 5 secondes. Avec 0, la redirection est immédiate.
-• Si l’article n’est pas disponible dans votre journal, rien ne se passe. L’icône affiche alors une petite marque grise.
+• Si l’article n’est pas disponible dans votre journal, vous restez sur la page et un petit avis dans le coin vous l’indique. Il peut être désactivé.
 • Les paramètres de suivi comme utm_* ou fbclid sont supprimés au passage.
 
 JOURNAUX PRIS EN CHARGE (Tamedia)

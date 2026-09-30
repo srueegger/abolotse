@@ -47,6 +47,8 @@ jobs:
         with:
           name: abolotse-${{ github.ref_name }}
           path: .output/*.zip
+          # .output is a hidden directory, which upload-artifact skips by default.
+          include-hidden-files: true
           if-no-files-found: error
 
       - uses: softprops/action-gh-release@v3

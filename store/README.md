@@ -24,6 +24,21 @@ Rules for all texts:
 | License (AMO)      | GNU General Public License v2.0 only                       |
 | Default language   | English                                                    |
 
+## Screenshots
+
+`screenshots/<lang>/` contains four 1280 × 800 images per language, suitable for
+both stores:
+
+1. `1-redirect.png`: the notice before redirecting
+2. `2-not-available.png`: the notice when an article is not available
+3. `3-settings.png`: welcome and settings page
+4. `4-popup.png`: popup with the status for the current tab
+
+The article page in the screenshots is a neutral placeholder without any
+publisher branding; the extension UI is real. AMO uses one set of images for all
+languages (only captions are translated), so upload the German set there. The
+Chrome Web Store accepts screenshots per language.
+
 ## Chrome Web Store: privacy practices
 
 **Single purpose:** When the user opens an article on a Swiss newspaper website,

@@ -23,10 +23,8 @@ SO FUNKTIONIERT ES
 • Ist der Artikel bei Ihrer Zeitung nicht verfügbar, bleiben Sie auf der Seite, und ein kleiner Hinweis in der Ecke sagt Ihnen das. Er lässt sich ausschalten.
 • Tracking-Parameter wie utm_* oder fbclid werden dabei entfernt.
 
-UNTERSTÜTZTE ZEITUNGEN (Tamedia)
-• Deutschschweiz: Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
-• Westschweiz: 24 heures, Tribune de Genève
-Weitergeleitet wird nur zwischen Zeitungen, die ihre Artikel teilen. Weitere Verlage sind geplant.
+UNTERSTÜTZTE ZEITUNGEN
+Version 1.0 unterstützt die Tageszeitungen des Schweizer Verlags Tamedia in der Deutsch- und der Westschweiz. Weitergeleitet wird nur zwischen Zeitungen, die ihre Artikel teilen. Die vollständige Liste finden Sie auf der Willkommensseite der Erweiterung und unter https://github.com/srueegger/abolotse. Weitere Verlage sind geplant.
 
 DATENSCHUTZ
 Keine Telemetrie, keine Analyse, keine externen Server. Netzwerkanfragen gehen ausschliesslich an die unterstützten Zeitungswebsites. Berechtigungen: storage für Ihre Einstellungen und Zugriff auf die unterstützten Zeitungswebsites.

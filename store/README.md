@@ -11,6 +11,9 @@ Rules for all texts:
 - Do not use logos, colours or trademarks of the publishers in screenshots or
   promotional images. Title names are only used to describe compatibility.
 - German texts use Swiss spelling (no «ß»).
+- Chrome Web Store: do not list the newspaper names in the description. A list
+  of titles was rejected as keyword spam (violation "Yellow Argon"); refer to
+  the welcome page and the GitHub repository for the full list instead.
 
 ## Common form fields
 

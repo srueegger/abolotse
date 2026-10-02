@@ -23,10 +23,8 @@ FONCTIONNEMENT
 • Si l’article n’est pas disponible dans votre journal, vous restez sur la page et un petit avis dans le coin vous l’indique. Il peut être désactivé.
 • Les paramètres de suivi comme utm_* ou fbclid sont supprimés au passage.
 
-JOURNAUX PRIS EN CHARGE (Tamedia)
-• Suisse romande : 24 heures, Tribune de Genève
-• Suisse alémanique : Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
-La redirection n’a lieu qu’entre journaux qui partagent leurs articles. D’autres éditeurs sont prévus.
+JOURNAUX PRIS EN CHARGE
+La version 1.0 prend en charge les quotidiens de l’éditeur suisse Tamedia en Suisse romande et en Suisse alémanique. La redirection n’a lieu qu’entre journaux qui partagent leurs articles. La liste complète figure sur la page d’accueil de l’extension et sur https://github.com/srueegger/abolotse. D’autres éditeurs sont prévus.
 
 CONFIDENTIALITÉ
 Pas de télémétrie, pas d’analyse, pas de serveur externe. Les requêtes réseau vont uniquement aux sites des journaux pris en charge. Autorisations : storage pour vos réglages et accès aux sites des journaux pris en charge.

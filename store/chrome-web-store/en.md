@@ -23,10 +23,8 @@ HOW IT WORKS
 • If the article is not available at your newspaper, you stay on the page and a small notice in the corner tells you so. It can be turned off.
 • Tracking parameters such as utm_* or fbclid are removed on the way.
 
-SUPPORTED NEWSPAPERS (Tamedia)
-• German-speaking Switzerland: Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
-• French-speaking Switzerland: 24 heures, Tribune de Genève
-Redirects only happen between newspapers that share their articles. More publishers are planned.
+SUPPORTED NEWSPAPERS
+Version 1.0 supports the daily newspapers of the Swiss publisher Tamedia in German- and French-speaking Switzerland. Redirects only happen between newspapers that share their articles. The complete list is shown on the extension's welcome page and at https://github.com/srueegger/abolotse. More publishers are planned.
 
 PRIVACY
 No telemetry, no analytics, no external servers. The only network requests go to the supported newspaper websites. Permissions: storage for your settings and access to the supported newspaper websites.

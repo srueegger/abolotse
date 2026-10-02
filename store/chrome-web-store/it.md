@@ -23,10 +23,8 @@ COME FUNZIONA
 • Se l’articolo non è disponibile nel suo giornale, rimane sulla pagina e un piccolo avviso nell’angolo glielo segnala. Può essere disattivato.
 • I parametri di tracciamento come utm_* o fbclid vengono rimossi.
 
-GIORNALI SUPPORTATI (Tamedia)
-• Svizzera tedesca: Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
-• Svizzera romanda: 24 heures, Tribune de Genève
-Il reindirizzamento avviene solo tra giornali che condividono i loro articoli. Altri editori sono previsti.
+GIORNALI SUPPORTATI
+La versione 1.0 supporta i quotidiani dell’editore svizzero Tamedia nella Svizzera tedesca e romanda. Il reindirizzamento avviene solo tra giornali che condividono i loro articoli. L’elenco completo si trova nella pagina di benvenuto dell’estensione e su https://github.com/srueegger/abolotse. Altri editori sono previsti.
 
 PRIVACY
 Nessuna telemetria, nessuna analisi, nessun server esterno. Le richieste di rete vanno solo ai siti dei giornali supportati. Autorizzazioni: storage per le impostazioni e accesso ai siti dei giornali supportati.

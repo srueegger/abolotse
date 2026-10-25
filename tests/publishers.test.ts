@@ -25,6 +25,7 @@ describe('publisher config', () => {
 
   it('builds https match patterns', () => {
     expect(matchPatterns()).toContain('https://www.bazonline.ch/*');
+    expect(matchPatterns()).toContain('https://www.bzbasel.ch/*');
     expect(matchPatterns().every((p) => p.startsWith('https://'))).toBe(true);
   });
 });

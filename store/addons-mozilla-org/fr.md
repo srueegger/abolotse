@@ -23,9 +23,10 @@ FONCTIONNEMENT
 • Si l’article n’est pas disponible dans votre journal, vous restez sur la page et un petit avis dans le coin vous l’indique. Il peut être désactivé.
 • Les paramètres de suivi comme utm_* ou fbclid sont supprimés au passage.
 
-JOURNAUX PRIS EN CHARGE (Tamedia)
-• Suisse romande : 24 heures, Tribune de Genève
-• Suisse alémanique : Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
+JOURNAUX PRIS EN CHARGE
+• Tamedia, Suisse romande : 24 heures, Tribune de Genève
+• Tamedia, Suisse alémanique : Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
+• CH Media : Aargauer Zeitung, Appenzeller Zeitung, Badener Tagblatt, bz Basel, Grenchner Tagblatt, Limmattaler Zeitung, Luzerner Zeitung, Nidwaldner Zeitung, Obwaldner Zeitung, Oltner Tagblatt, Schweiz Heute, Solothurner Zeitung, St. Galler Tagblatt, Thurgauer Zeitung, Urner Zeitung, Zofinger Tagblatt, Zuger Zeitung
 La redirection n’a lieu qu’entre journaux qui partagent leurs articles. D’autres éditeurs sont prévus.
 
 CONFIDENTIALITÉ

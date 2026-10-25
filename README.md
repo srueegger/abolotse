@@ -16,10 +16,11 @@ leads you to articles covered by a subscription you already have.
 
 Redirects only happen within the same publisher group.
 
-| Group                    | Titles                                                   |
-| ------------------------ | -------------------------------------------------------- |
-| Tamedia (Deutschschweiz) | Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund |
-| Tamedia (Suisse romande) | 24 heures, Tribune de Genève                             |
+| Group                    | Titles                                                                                                                                                                                                                                                                                                            |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tamedia (Deutschschweiz) | Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund                                                                                                                                                                                                                                                          |
+| Tamedia (Suisse romande) | 24 heures, Tribune de Genève                                                                                                                                                                                                                                                                                      |
+| CH Media                 | Aargauer Zeitung, Appenzeller Zeitung, Badener Tagblatt, bz Basel, Grenchner Tagblatt, Limmattaler Zeitung, Luzerner Zeitung, Nidwaldner Zeitung, Obwaldner Zeitung, Oltner Tagblatt, Schweiz Heute, Solothurner Zeitung, St. Galler Tagblatt, Thurgauer Zeitung, Urner Zeitung, Zofinger Tagblatt, Zuger Zeitung |
 
 Former regional portals (e.g. Zürichsee-Zeitung, Landbote, Thuner Tagblatt) now
 redirect to sections of the titles above and are covered through them.
@@ -144,5 +145,6 @@ Abo-Lotse im Hintergrund, ob der Artikel auch bei Ihrer Zeitung verfügbar ist,
 und leitet Sie dorthin weiter. So lesen Sie ihn mit Ihrem eigenen Abo.
 
 Abo-Lotse schaltet keine Inhalte frei. Die Erweiterung erhebt keine Daten und
-kontaktiert nur die Websites der unterstützten Zeitungen. Unterstützt werden in
-Version 1.0 die Titel von Tamedia in der Deutschschweiz und in der Romandie.
+kontaktiert nur die Websites der unterstützten Zeitungen. Unterstützt werden die
+Titel von Tamedia in der Deutschschweiz und in der Romandie sowie die Titel von
+CH Media.

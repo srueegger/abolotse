@@ -23,9 +23,10 @@ COME FUNZIONA
 • Se l’articolo non è disponibile nel suo giornale, rimane sulla pagina e un piccolo avviso nell’angolo glielo segnala. Può essere disattivato.
 • I parametri di tracciamento come utm_* o fbclid vengono rimossi.
 
-GIORNALI SUPPORTATI (Tamedia)
-• Svizzera tedesca: Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
-• Svizzera romanda: 24 heures, Tribune de Genève
+GIORNALI SUPPORTATI
+• Tamedia, Svizzera tedesca: Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
+• Tamedia, Svizzera romanda: 24 heures, Tribune de Genève
+• CH Media: Aargauer Zeitung, Appenzeller Zeitung, Badener Tagblatt, bz Basel, Grenchner Tagblatt, Limmattaler Zeitung, Luzerner Zeitung, Nidwaldner Zeitung, Obwaldner Zeitung, Oltner Tagblatt, Schweiz Heute, Solothurner Zeitung, St. Galler Tagblatt, Thurgauer Zeitung, Urner Zeitung, Zofinger Tagblatt, Zuger Zeitung
 Il reindirizzamento avviene solo tra giornali che condividono i loro articoli. Altri editori sono previsti.
 
 PRIVACY

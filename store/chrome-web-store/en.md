@@ -24,7 +24,7 @@ HOW IT WORKS
 • Tracking parameters such as utm_* or fbclid are removed on the way.
 
 SUPPORTED NEWSPAPERS
-Version 1.0 supports the daily newspapers of the Swiss publisher Tamedia in German- and French-speaking Switzerland. Redirects only happen between newspapers that share their articles. The complete list is shown on the extension's welcome page and at https://github.com/srueegger/abolotse. More publishers are planned.
+Abo-Lotse supports the daily newspapers of the Swiss publishers Tamedia (German- and French-speaking Switzerland) and CH Media. Redirects only happen between newspapers that share their articles. The complete list is shown on the extension's welcome page and at https://github.com/srueegger/abolotse. More publishers are planned.
 
 PRIVACY
 No telemetry, no analytics, no external servers. The only network requests go to the supported newspaper websites. Permissions: storage for your settings and access to the supported newspaper websites.

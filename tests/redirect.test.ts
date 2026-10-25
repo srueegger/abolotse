@@ -70,3 +70,31 @@ describe('decideRedirect', () => {
     expect(decideRedirect(new URL(ARTICLE), s, none)).toMatchObject({ reason: 'no-own-title' });
   });
 });
+
+describe('decideRedirect (CH Media)', () => {
+  const chSettings = settings({ ownTitles: { chmedia: 'aargauerzeitung' } });
+
+  it('checks a sister-title article against the own title', () => {
+    const url = new URL('https://www.bzbasel.ch/schweiz/slug-ld.4250286');
+    expect(decideRedirect(url, chSettings, none)).toMatchObject({
+      action: 'check',
+      target: { title: { id: 'aargauerzeitung' } },
+      targetUrl: 'https://www.aargauerzeitung.ch/schweiz/slug-ld.4250286',
+    });
+  });
+
+  it('handles the short form', () => {
+    const url = new URL('https://www.oltnertagblatt.ch/-ld.4250286');
+    expect(decideRedirect(url, chSettings, none)).toMatchObject({
+      action: 'check',
+      targetUrl: 'https://www.aargauerzeitung.ch/-ld.4250286',
+    });
+  });
+
+  it('never redirects from Tamedia to CH Media', () => {
+    expect(decideRedirect(new URL(ARTICLE), chSettings, none)).toMatchObject({
+      action: 'skip',
+      reason: 'no-own-title',
+    });
+  });
+});

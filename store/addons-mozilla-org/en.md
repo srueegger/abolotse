@@ -23,9 +23,10 @@ HOW IT WORKS
 • If the article is not available at your newspaper, you stay on the page and a small notice in the corner tells you so. It can be turned off.
 • Tracking parameters such as utm_* or fbclid are removed on the way.
 
-SUPPORTED NEWSPAPERS (Tamedia)
-• German-speaking Switzerland: Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
-• French-speaking Switzerland: 24 heures, Tribune de Genève
+SUPPORTED NEWSPAPERS
+• Tamedia, German-speaking Switzerland: Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
+• Tamedia, French-speaking Switzerland: 24 heures, Tribune de Genève
+• CH Media: Aargauer Zeitung, Appenzeller Zeitung, Badener Tagblatt, bz Basel, Grenchner Tagblatt, Limmattaler Zeitung, Luzerner Zeitung, Nidwaldner Zeitung, Obwaldner Zeitung, Oltner Tagblatt, Schweiz Heute, Solothurner Zeitung, St. Galler Tagblatt, Thurgauer Zeitung, Urner Zeitung, Zofinger Tagblatt, Zuger Zeitung
 Redirects only happen between newspapers that share their articles. More publishers are planned.
 
 PRIVACY

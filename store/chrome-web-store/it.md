@@ -24,7 +24,7 @@ COME FUNZIONA
 • I parametri di tracciamento come utm_* o fbclid vengono rimossi.
 
 GIORNALI SUPPORTATI
-La versione 1.0 supporta i quotidiani dell’editore svizzero Tamedia nella Svizzera tedesca e romanda. Il reindirizzamento avviene solo tra giornali che condividono i loro articoli. L’elenco completo si trova nella pagina di benvenuto dell’estensione e su https://github.com/srueegger/abolotse. Altri editori sono previsti.
+Abo-Lotse supporta i quotidiani degli editori svizzeri Tamedia (Svizzera tedesca e romanda) e CH Media. Il reindirizzamento avviene solo tra giornali che condividono i loro articoli. L’elenco completo si trova nella pagina di benvenuto dell’estensione e su https://github.com/srueegger/abolotse. Altri editori sono previsti.
 
 PRIVACY
 Nessuna telemetria, nessuna analisi, nessun server esterno. Le richieste di rete vanno solo ai siti dei giornali supportati. Autorizzazioni: storage per le impostazioni e accesso ai siti dei giornali supportati.

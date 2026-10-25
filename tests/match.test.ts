@@ -4,6 +4,8 @@ import { PUBLISHER_GROUPS } from '../src/publishers';
 
 const ID = '283418639546';
 const de = PUBLISHER_GROUPS.find((g) => g.id === 'tamedia-de')!;
+const CH_ID = '4249333';
+const chmedia = PUBLISHER_GROUPS.find((g) => g.id === 'chmedia')!;
 
 describe('extractArticleId', () => {
   it.each([
@@ -27,6 +29,26 @@ describe('extractArticleId', () => {
   });
 });
 
+describe('extractArticleId (CH Media)', () => {
+  it.each([
+    [`/basel/baselland/denkmalgeschuetzt-und-sanierungsbeduerftig-ld.${CH_ID}`, CH_ID],
+    [`/-ld.${CH_ID}`, CH_ID], // short form
+    [`/schweiz/slug-ld.${CH_ID}/`, CH_ID],
+  ])('extracts the ID from %s', (path, expected) => {
+    expect(extractArticleId(chmedia, path)).toBe(expected);
+  });
+
+  it.each([
+    '/',
+    '/basel',
+    `/slug-${CH_ID}`, // no `ld.` marker
+    '/slug-ld.', // no digits
+    `/slug-ld.${CH_ID}/comments`,
+  ])('rejects %s', (path) => {
+    expect(extractArticleId(chmedia, path)).toBeUndefined();
+  });
+});
+
 describe('findTitleByHost', () => {
   it('finds titles case-insensitively', () => {
     expect(findTitleByHost('WWW.BAZONLINE.CH')?.title.id).toBe('bazonline');
@@ -46,6 +68,17 @@ describe('matchArticle', () => {
       articleId: ID,
       title: { id: 'derbund' },
       group: { id: 'tamedia-de' },
+    });
+  });
+
+  it('matches CH Media articles', () => {
+    const match = matchArticle(
+      new URL(`https://www.bzbasel.ch/basel/slug-ld.${CH_ID}?nativeApp=false`),
+    );
+    expect(match).toMatchObject({
+      articleId: CH_ID,
+      title: { id: 'bzbasel' },
+      group: { id: 'chmedia' },
     });
   });
 

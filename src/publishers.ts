@@ -43,6 +43,11 @@ export function swapHost(targetDomain: string, originalUrl: URL): string {
 // `/story/` or section paths are redirected server-side, so they are accepted too.
 const TAMEDIA_ARTICLE_ID = /-(\d{12})\/?$/;
 
+// CH Media article paths end in `-ld.` plus a numeric ID that is shared by all
+// titles, e.g. `/schweiz/some-slug-ld.4250286`. The short form `/-ld.4250286`
+// works too.
+const CH_MEDIA_ARTICLE_ID = /-ld\.(\d+)\/?$/;
+
 export const PUBLISHER_GROUPS: readonly PublisherGroup[] = [
   {
     id: 'tamedia-de',
@@ -74,6 +79,91 @@ export const PUBLISHER_GROUPS: readonly PublisherGroup[] = [
     titles: [
       { id: '24heures', name: '24 heures', domain: 'www.24heures.ch', language: 'fr' },
       { id: 'tdg', name: 'Tribune de Genève', domain: 'www.tdg.ch', language: 'fr' },
+    ],
+  },
+  {
+    id: 'chmedia',
+    name: 'CH Media',
+    articleIdPattern: CH_MEDIA_ARTICLE_ID,
+    buildUrl: swapHost,
+    titles: [
+      {
+        id: 'aargauerzeitung',
+        name: 'Aargauer Zeitung',
+        domain: 'www.aargauerzeitung.ch',
+        language: 'de',
+      },
+      {
+        id: 'appenzellerzeitung',
+        name: 'Appenzeller Zeitung',
+        domain: 'www.appenzellerzeitung.ch',
+        language: 'de',
+      },
+      {
+        id: 'badenertagblatt',
+        name: 'Badener Tagblatt',
+        domain: 'www.badenertagblatt.ch',
+        language: 'de',
+      },
+      { id: 'bzbasel', name: 'bz Basel', domain: 'www.bzbasel.ch', language: 'de' },
+      {
+        id: 'grenchnertagblatt',
+        name: 'Grenchner Tagblatt',
+        domain: 'www.grenchnertagblatt.ch',
+        language: 'de',
+      },
+      {
+        id: 'limmattalerzeitung',
+        name: 'Limmattaler Zeitung',
+        domain: 'www.limmattalerzeitung.ch',
+        language: 'de',
+      },
+      {
+        id: 'luzernerzeitung',
+        name: 'Luzerner Zeitung',
+        domain: 'www.luzernerzeitung.ch',
+        language: 'de',
+      },
+      {
+        id: 'nidwaldnerzeitung',
+        name: 'Nidwaldner Zeitung',
+        domain: 'www.nidwaldnerzeitung.ch',
+        language: 'de',
+      },
+      {
+        id: 'obwaldnerzeitung',
+        name: 'Obwaldner Zeitung',
+        domain: 'www.obwaldnerzeitung.ch',
+        language: 'de',
+      },
+      {
+        id: 'oltnertagblatt',
+        name: 'Oltner Tagblatt',
+        domain: 'www.oltnertagblatt.ch',
+        language: 'de',
+      },
+      { id: 'schweizheute', name: 'Schweiz Heute', domain: 'www.schweizheute.ch', language: 'de' },
+      {
+        id: 'solothurnerzeitung',
+        name: 'Solothurner Zeitung',
+        domain: 'www.solothurnerzeitung.ch',
+        language: 'de',
+      },
+      { id: 'tagblatt', name: 'St. Galler Tagblatt', domain: 'www.tagblatt.ch', language: 'de' },
+      {
+        id: 'thurgauerzeitung',
+        name: 'Thurgauer Zeitung',
+        domain: 'www.thurgauerzeitung.ch',
+        language: 'de',
+      },
+      { id: 'urnerzeitung', name: 'Urner Zeitung', domain: 'www.urnerzeitung.ch', language: 'de' },
+      {
+        id: 'zofingertagblatt',
+        name: 'Zofinger Tagblatt',
+        domain: 'www.zofingertagblatt.ch',
+        language: 'de',
+      },
+      { id: 'zugerzeitung', name: 'Zuger Zeitung', domain: 'www.zugerzeitung.ch', language: 'de' },
     ],
   },
 ];

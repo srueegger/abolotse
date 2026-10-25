@@ -24,7 +24,7 @@ FONCTIONNEMENT
 • Les paramètres de suivi comme utm_* ou fbclid sont supprimés au passage.
 
 JOURNAUX PRIS EN CHARGE
-La version 1.0 prend en charge les quotidiens de l’éditeur suisse Tamedia en Suisse romande et en Suisse alémanique. La redirection n’a lieu qu’entre journaux qui partagent leurs articles. La liste complète figure sur la page d’accueil de l’extension et sur https://github.com/srueegger/abolotse. D’autres éditeurs sont prévus.
+Abo-Lotse prend en charge les quotidiens des éditeurs suisses Tamedia (Suisse romande et alémanique) et CH Media. La redirection n’a lieu qu’entre journaux qui partagent leurs articles. La liste complète figure sur la page d’accueil de l’extension et sur https://github.com/srueegger/abolotse. D’autres éditeurs sont prévus.
 
 CONFIDENTIALITÉ
 Pas de télémétrie, pas d’analyse, pas de serveur externe. Les requêtes réseau vont uniquement aux sites des journaux pris en charge. Autorisations : storage pour vos réglages et accès aux sites des journaux pris en charge.

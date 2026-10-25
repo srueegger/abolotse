@@ -23,9 +23,10 @@ SO FUNKTIONIERT ES
 • Ist der Artikel bei Ihrer Zeitung nicht verfügbar, bleiben Sie auf der Seite, und ein kleiner Hinweis in der Ecke sagt Ihnen das. Er lässt sich ausschalten.
 • Tracking-Parameter wie utm_* oder fbclid werden dabei entfernt.
 
-UNTERSTÜTZTE ZEITUNGEN (Tamedia)
-• Deutschschweiz: Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
-• Westschweiz: 24 heures, Tribune de Genève
+UNTERSTÜTZTE ZEITUNGEN
+• Tamedia Deutschschweiz: Tages-Anzeiger, Basler Zeitung, Berner Zeitung, Der Bund
+• Tamedia Westschweiz: 24 heures, Tribune de Genève
+• CH Media: Aargauer Zeitung, Appenzeller Zeitung, Badener Tagblatt, bz Basel, Grenchner Tagblatt, Limmattaler Zeitung, Luzerner Zeitung, Nidwaldner Zeitung, Obwaldner Zeitung, Oltner Tagblatt, Schweiz Heute, Solothurner Zeitung, St. Galler Tagblatt, Thurgauer Zeitung, Urner Zeitung, Zofinger Tagblatt, Zuger Zeitung
 Weitergeleitet wird nur zwischen Zeitungen, die ihre Artikel teilen. Weitere Verlage sind geplant.
 
 DATENSCHUTZ

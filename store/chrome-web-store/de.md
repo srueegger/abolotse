@@ -24,7 +24,7 @@ SO FUNKTIONIERT ES
 • Tracking-Parameter wie utm_* oder fbclid werden dabei entfernt.
 
 UNTERSTÜTZTE ZEITUNGEN
-Version 1.0 unterstützt die Tageszeitungen des Schweizer Verlags Tamedia in der Deutsch- und der Westschweiz. Weitergeleitet wird nur zwischen Zeitungen, die ihre Artikel teilen. Die vollständige Liste finden Sie auf der Willkommensseite der Erweiterung und unter https://github.com/srueegger/abolotse. Weitere Verlage sind geplant.
+Abo-Lotse unterstützt die Tageszeitungen der Schweizer Verlage Tamedia (Deutsch- und Westschweiz) und CH Media. Weitergeleitet wird nur zwischen Zeitungen, die ihre Artikel teilen. Die vollständige Liste finden Sie auf der Willkommensseite der Erweiterung und unter https://github.com/srueegger/abolotse. Weitere Verlage sind geplant.
 
 DATENSCHUTZ
 Keine Telemetrie, keine Analyse, keine externen Server. Netzwerkanfragen gehen ausschliesslich an die unterstützten Zeitungswebsites. Berechtigungen: storage für Ihre Einstellungen und Zugriff auf die unterstützten Zeitungswebsites.
